@@ -10,13 +10,21 @@
         <a>フォーム作成form</a>
         <!--PHPを利用している-->
         <form action="example.php" method="post" name=""contact-form>
-            ここにフォーム作成の部品が入る
+            <!--ここにフォーム作成の部品が入る-->
+            1行テキスト入力欄
             <p><a>input type="text"</a></p>
             <p><a>名前：<input type="text"></a></p>
             <p><a>その他type="search""email""tel""url"</a></p>
             <p><a>検索：<input type="search"></a></p>
             <p><a>input type="text" placeholder="名字　名前"</a></p>
             <p><a><input type="text" placeholder="名字　名前"></a></p>
+            ラジオボタン
+            <p><a>input type="radio" name="gender" value="男"</a></p>
+            性別：
+            <input type="radio" name="gender" value="男">男
+            <input type="radio" name="gender" value="女">女
+            <input type="radio" name="gender" value="その他">その他
+
         </form>
     </body>
 </html>
