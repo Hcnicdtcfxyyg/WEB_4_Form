@@ -10,25 +10,30 @@
         <a>フォーム作成form</a>
         <!--PHPを利用している-->
         <form action="example.php" method="post" name=""contact-form>
-            <!--ここにフォーム作成の部品が入る-->
+            <!--ここにフォーム作成の部品が入る
+            <a> タグを入れるとどうなる？
+                <input> を <a> で囲むと、文字入力欄をクリックしたいのにリンク移動が発生してしまったり、ブラウザによって挙動が崩れる原因になります。
+            name 属性をつけよう
+                type="search" を使う時は、上記のように name="q" や name="keyword" などの名前をつけておくと、検索ボタンを押したときにサーバーへ入力内容を送信できるようになります。
+            -->
             1行テキスト入力欄
-            <p><a>input type="text"</a></p>
-            <p><a>名前：<input type="text"></a></p>
-            <p><a>その他type="search""email""tel""url"</a></p>
-            <p><a>検索search：<input type="search"></a></p>
-            <p><a>email：<input type="email"></a></p>
-            <p><a>tel：<input type="tel"></a></p>
-            <p><a>url：<input type="ulr"></a></p>
-            <p><a>input type="text" placeholder="名字　名前"</a></p>
-            <p><a><input type="text" placeholder="名字　名前"></a></p>
+            <p>input type="text"</p>
+            <p>名前：<input type="text"></p>
+            <p>その他type="search""email""tel""url"</p>
+            <p>検索search：<input type="search"></p>
+            <p>email：<input type="email"></p>
+            <p>tel：<input type="tel"></p>
+            <p>url：<input type="ulr"></p>
+            <p>input type="text" placeholder="名字　名前"</p>
+            <p><input type="text" placeholder="名字　名前"></p>
 
             ラジオボタン
-            <p><a>input type="radio" name="gender" value="男"</a></p>
+            <p>input type="radio" name="gender" value="男"</p>
             性別：
             <input type="radio" name="gender" value="男">男
             <input type="radio" name="gender" value="女">女
             <input type="radio" name="gender" value="その他">その他
-            <p><a>input type="radio" name="gender" value="checked" checked</a></p>
+            <p>input type="radio" name="gender" value="checked" checked</p>
             <input type="radio" name="gender" value="checked" checked>checked
 
             <p>チェックボックス</p>
