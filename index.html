@@ -24,8 +24,8 @@
             <p>email：<input type="email"></p>
             <p>tel：<input type="tel"></p>
             <p>url：<input type="ulr"></p>
-            <p>input type="text" placeholder="名字　名前"</p>
-            <p><input type="text" placeholder="名字　名前"></p>
+            <p>input type="text" placeholder="名字 名前"</p>
+            <p><input type="text" placeholder="名字 名前"></p>
 
             ラジオボタン
             <p>input type="radio" name="gender" value="男"</p>
@@ -41,10 +41,21 @@
             <input type="checkbox" name="color" value="赤">赤
             <input type="checkbox" name="color" value="青">青
 
-            <p>送信ボタン　input type="submit" value="送信"　※デフォルト</p>
+            <p>送信ボタン input type="submit" value="送信" ※デフォルト</p>
             <input type="submit" value="送信">
-            <p>送信ボタン　input type="image" src="https://soco-st.com/wp-content/uploads/support_11324_thumb.png" alt="送信"　※画像利用ボタン</p>
+            <!---<img> タグを使うときは、「もし画像が表示されなかったら、ここにどんな文字があると伝わるか？」 を考えて 
+                alt="〇〇" を書くのが基本
+            -->
+            <p>送信ボタン input type="image" src="https://soco-st.com/wp-content/uploads/support_11324_thumb.png" alt="送信"　※画像利用ボタン</p>
             <input type="image" src="https://soco-st.com/wp-content/uploads/support_11324_thumb.png" alt="送信">
+
+            <p>セレクトボックス select name="bloodtype"</p>
+            <p>選択肢 option value="A"</p>
+            血液型
+            <select name="bloodtype">
+                <option value="A">A</option>
+                <option value="B">B</option>
+            </select>
         </form>
     </body>
 </html>
